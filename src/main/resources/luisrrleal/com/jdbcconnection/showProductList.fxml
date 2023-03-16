@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            prefHeight="400.0" prefWidth="600.0"
+>
+    <VBox AnchorPane.bottomAnchor="10" AnchorPane.leftAnchor="5" AnchorPane.rightAnchor="5" AnchorPane.topAnchor="10" >
+        <TableView fx:id="tblProduct">
+            <columns>
+                <TableColumn text="ID">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="id"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn text="NAME">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="name"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn text="COLOR">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="color"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn text="IMAGE">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="image"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn text="DESCRIPTION">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="description"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn text="SIZE">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="size"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn text="QUANTITY">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="quantity"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn text="CATEGORY ID">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="category_id"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn text="SALE PRICE">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="sale_price"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn text="PURCHASE PRICE">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="purchase_price"/>
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </VBox>
+</AnchorPane>
